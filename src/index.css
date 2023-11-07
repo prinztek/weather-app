@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgba(171, 108, 214, 1) 0%,
+    rgba(255, 144, 144, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
