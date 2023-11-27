@@ -2,7 +2,7 @@ import Navigation from './components/Navigation'
 import InputForm from './components/InputForm'
 import Rank from './components/Rank'
 import Weather from './components/Weather'
-import Signin from './components/SignIn'
+import Signin from './components/Signin'
 import Register from './components/Register'
 import { useState } from 'react'
 
@@ -151,46 +151,3 @@ function App() {
 
 export default App
 
-// try {
-    //   const geoResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=1&appid=${APIkey}`)
-
-    //   if (geoResponse.ok) {
-    //     const geoData = await geoResponse.json()
-    //     const {lat, lon} = geoData[0]
-    //     // console.log(geoData[0]);
-
-    //     try {
-    //       // Call current weather data
-    //       const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}`)
-    //       if (weatherResponse.ok) {
-    //         const weatherData = await weatherResponse.json()
-    //         // Update User Entries
-    //         fetch('http://localhost:3000/city', {
-    //           method: 'put',
-    //           headers: {'Content-Type': 'application/json'},
-    //           body: JSON.stringify({
-    //             id:  state.user.id,
-    //           })
-    //         })
-    //         .then(response => response.json())
-    //         .then(count => {
-    //           // Update number of entries
-    //           setState((prevState) => {return {...prevState, user: {
-    //             ...prevState.user,
-    //             entries: count
-    //           }}})
-    //         })
-    //         .catch (console.error)
-    //         // Update weather states
-    //         setState((prevState) => { return {...prevState, city: weatherData.name}})
-    //         setState((prevState) => { return {...prevState, temperature: `Temperature: ${weatherData.main.temp}`}})
-    //         setState((prevState) => { return {...prevState, weather: `Description: ${weatherData.weather[0].description}`}})
-    //         setState((prevState) => { return {...prevState, weatherIcon: `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}})
-    //       }
-    //     } catch (error) {
-    //       console.error('An error occurred:', error);
-    //     }
-    //   }
-    // } catch (error) {
-    //   console.error('An error occurred:', error);
-    // }
