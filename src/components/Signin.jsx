@@ -1,12 +1,9 @@
 import { useState } from "react"
 
 /* eslint-disable react/prop-types */
+const initialSignInState = {signInEmail: "", signInPassword: ""};
 function Signin({onRouteChange, loadUser}) {
-  const [state, setState] = useState({
-    signInEmail: '',
-    signInPassword: ''
-  })
-
+  const [state, setState] = useState(initialSignInState)
 
   const onEmailChange = (event) => {
     setState((prevState) => ({
@@ -61,7 +58,7 @@ function Signin({onRouteChange, loadUser}) {
             <p onClick={() => onRouteChange('register')}  className="text-blue-500 hover:underline text-sm">Register?</p>
         </div>
       </div>
-  </div>
+    </div>
   )
 }
 export default Signin
