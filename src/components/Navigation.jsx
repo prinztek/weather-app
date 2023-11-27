@@ -14,6 +14,9 @@ function Navigation({onRouteChange, isSignedIn}) {
           <li className="font-bold text-slate-700	py-2 px-4 hover:text-slate-900">
             <a href="/">About</a>
             </li>
+          <li className="font-bold text-slate-700	py-2 px-4 hover:text-slate-900">
+            <a href="/">Profile</a>
+          </li>
           <li className="cursor-pointer font-bold text-slate-700 py-2 px-4 hover:text-slate-900">
             <p onClick={() => onRouteChange('signin')}>Sign Out</p>
           </li>
